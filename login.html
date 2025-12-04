@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - ECOPATAS</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Anton&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="body-login">
+    <div class="login-container">
+      <div class="form-container">
+        <div class="login-logo">
+          <a href="index.html">
+            <img src="assets/logo.png" alt="Logo ECOPATAS" class="login-icon" />
+            <span class="logo-text">ECOPATAS</span>
+          </a>
+        </div>
+
+        <h2>Login Administrativo</h2>
+        <p>Acesse sua conta para gerenciar os animais cadastrados.</p>
+
+        <form action="#" method="POST">
+          <div class="form-group">
+            <label for="email-login">Email</label>
+            <input
+              type="email"
+              id="email-login"
+              name="email-login"
+              placeholder="seu.email@exemplo.com"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="senha-login">Senha</label>
+            <input
+              type="password"
+              id="senha-login"
+              name="senha-login"
+              placeholder="Digite sua senha"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-full">
+              Entrar
+            </button>
+          </div>
+
+          <div class="login-links">
+            <a href="#">Esqueceu a senha?</a>
+            <a href="index.html">Voltar ao site</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
