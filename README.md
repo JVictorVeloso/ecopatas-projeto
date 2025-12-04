@@ -61,6 +61,7 @@ Para manter a plataforma no ar, implementamos estratégias de monetização inte
 
 1.  **Programa de Afiliados:** Recomendações de produtos essenciais (ração, camas) para novos tutores.
 2.  **Doações:** Integração visual de QR Code para doações via Pix, facilitando o apoio da comunidade.
+3.  **Adsenses** Futuramente através de adsenses.
 
 ## 🤝 Contribuição
 
@@ -73,3 +74,4 @@ Este é um projeto acadêmico/portfólio. Sugestões e feedbacks são muito bem-
 5.  Abra um Pull Request.
 
 ---
+
