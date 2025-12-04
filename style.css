@@ -1,17 +1,11 @@
-/* =========================================
-   STYLE.CSS - Design "ECOPATAS" (Atualizado com QR Code)
-   ========================================= */
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Anton&display=swap');
 
 :root {
-  /* Paleta de Cores do PDF */
-  --bg-color: #ebe5ce; /* Fundo Bege */
-  --primary-dark: #4b5320; /* Verde Militar Escuro */
-  --accent-green: #8a9a5b; /* Verde Musgo Claro (Botões/Detalhes) */
-  --text-dark: #2f302a; /* Texto quase preto */
+  --bg-color: #ebe5ce;
+  --primary-dark: #4b5320;
+  --accent-green: #8a9a5b;
+  --text-dark: #2f302a;
   --white: #ffffff;
-
   --font-primary: 'Montserrat', sans-serif;
   --font-secondary: 'Anton', sans-serif;
 }
@@ -23,8 +17,8 @@
 }
 
 html {
-  scroll-behavior: smooth; /* Faz o deslize ser suave */
-  scroll-padding-top: 100px; /* Impede que o menu fixo cubra o título */
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
 }
 
 body {
@@ -40,7 +34,6 @@ body {
   padding: 0 20px;
 }
 
-/* --- HEADER --- */
 .main-header {
   background-color: var(--primary-dark);
   padding: 1rem 0;
@@ -67,7 +60,6 @@ body {
   letter-spacing: 1px;
 }
 
-/* Filtro APENAS para a logo do cabeçalho (Preto vira Branco) */
 .logo-img {
   height: 45px;
   width: auto;
@@ -79,6 +71,7 @@ body {
   display: flex;
   gap: 20px;
 }
+
 .main-nav a {
   color: var(--white);
   text-decoration: none;
@@ -86,6 +79,7 @@ body {
   font-size: 0.9rem;
   transition: 0.3s;
 }
+
 .main-nav a:hover {
   color: var(--accent-green);
 }
@@ -96,14 +90,14 @@ body {
   border-radius: 20px;
   color: var(--white) !important;
 }
+
 .btn-login:hover {
   filter: brightness(1.1);
 }
 
-/* --- HERO SECTION --- */
 .hero-section {
   background: url('assets/hero-bg.jpg') no-repeat center center/cover;
-  height: 500px; /* Altura do banner */
+  height: 500px;
   display: flex;
   align-items: center;
   position: relative;
@@ -122,10 +116,10 @@ body {
   position: relative;
   z-index: 2;
   color: var(--white);
-  max-width: 550px; /* Reduzi um pouco para garantir que não cubra o rosto */
-  text-align: left; /* Alinha o texto à esquerda */
-  margin-right: auto; /* Força a caixa a ficar na esquerda do container */
-  margin-left: 0; /* Garante margem zero na esquerda */
+  max-width: 550px;
+  text-align: left;
+  margin-right: auto;
+  margin-left: 0;
 }
 
 .hero-content h1 {
@@ -135,6 +129,7 @@ body {
   text-transform: uppercase;
   margin-bottom: 1rem;
 }
+
 .hero-content h1 span {
   color: var(--accent-green);
 }
@@ -163,10 +158,12 @@ body {
   border: none;
   cursor: pointer;
 }
+
 .btn-solid {
   background-color: var(--accent-green);
   color: var(--white);
 }
+
 .btn-solid:hover {
   background-color: var(--primary-dark);
 }
@@ -175,12 +172,12 @@ body {
   border: 2px solid var(--white);
   color: var(--white);
 }
+
 .btn-outline:hover {
   background-color: var(--white);
   color: var(--primary-dark);
 }
 
-/* --- TÍTULOS --- */
 .section-center {
   text-align: center;
   padding: 4rem 0 2rem 0;
@@ -205,7 +202,6 @@ body {
   font-size: 1rem;
 }
 
-/* --- COMO FUNCIONA --- */
 .passos-container {
   display: flex;
   justify-content: center;
@@ -250,27 +246,22 @@ body {
   opacity: 0.9;
 }
 
-/* =========================================
-   NOVO ESTILO DOS CARDS (Referência Imagem)
-   ========================================= */
-
-/* Ajuste do fundo da seção para destacar os cards bege */
 #animais {
-  background-color: #f1f7d5 !important; /* Verde claro suave da referência */
+  background-color: #f1f7d5 !important;
 }
 
 .animais-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsivo */
-  gap: 30px; /* Mais espaço entre os cards */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
   margin-top: 2rem;
 }
 
 .animal-card {
-  background-color: #fcfae8; /* Cor Creme/Bege exata da imagem */
-  padding: 20px; /* Espaço interno maior (moldura) */
-  border-radius: 30px; /* Borda MUITO arredondada */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08); /* Sombra suave */
+  background-color: #fcfae8;
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
   display: flex;
   flex-direction: column;
   transition: transform 0.3s ease;
@@ -278,14 +269,14 @@ body {
 }
 
 .animal-card:hover {
-  transform: translateY(-5px); /* Efeito suave ao passar o mouse */
+  transform: translateY(-5px);
 }
 
 .animal-foto {
   width: 100%;
   height: 220px;
   object-fit: cover;
-  border-radius: 20px; /* Arredondamento da foto */
+  border-radius: 20px;
   margin-bottom: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -305,15 +296,14 @@ body {
 }
 
 .animal-header h3 {
-  font-family: var(--font-secondary); /* Mantém sua fonte Anton */
+  font-family: var(--font-secondary);
   font-size: 1.5rem;
-  color: #333; /* Texto mais escuro para contraste */
+  color: #333;
   margin: 0;
 }
 
-/* Estilo da Etiqueta (Badge) */
 .tag-status {
-  background-color: #97a875; /* Verde oliva claro da referência */
+  background-color: #97a875;
   color: #fff;
   font-size: 0.75rem;
   font-weight: 600;
@@ -325,19 +315,18 @@ body {
 
 .animal-desc {
   font-size: 0.9rem;
-  color: #666; /* Cinza médio */
+  color: #666;
   margin-bottom: 25px;
   line-height: 1.5;
-  flex-grow: 1; /* Empurra o botão para baixo */
+  flex-grow: 1;
 }
 
-/* Botão estilo referência */
 .btn-card {
-  background-color: #5e7040; /* Verde escuro exato da imagem */
+  background-color: #5e7040;
   color: #fff;
   width: 100%;
   text-align: center;
-  border-radius: 12px; /* Botão arredondado */
+  border-radius: 12px;
   padding: 14px;
   font-size: 1rem;
   font-weight: 700;
@@ -353,10 +342,10 @@ body {
   filter: none;
 }
 
-/* --- FORMULÁRIO --- */
 .form-section {
   padding-bottom: 4rem;
 }
+
 .form-wrapper {
   background-color: var(--primary-dark);
   padding: 2.5rem;
@@ -373,6 +362,7 @@ body {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   padding-bottom: 10px;
 }
+
 .form-desc-top {
   text-align: center;
   margin-bottom: 2rem;
@@ -386,6 +376,7 @@ body {
   gap: 20px;
   margin-bottom: 1.5rem;
 }
+
 .full-width {
   grid-column: span 2;
 }
@@ -409,6 +400,7 @@ body {
   font-size: 0.9rem;
   background-color: rgba(255, 255, 255, 0.9);
 }
+
 .form-group input:focus {
   outline: 2px solid var(--accent-green);
 }
@@ -427,7 +419,6 @@ body {
   margin-top: 10px;
 }
 
-/* Responsividade Geral */
 @media (max-width: 768px) {
   .hero-section {
     height: 400px;
@@ -450,48 +441,41 @@ body {
   }
 }
 
-/* =========================================
-   ESTILO DA PÁGINA DE LOGIN (ATUALIZADO)
-   ========================================= */
-
-/* 1. Centraliza tudo na tela */
 .body-login {
-  background-color: var(--bg-color); /* Fundo bege do site */
-  height: 100vh; /* Altura total da tela */
+  background-color: var(--bg-color);
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 20px;
 }
 
-/* 2. O Cartão de Login (A caixa branca) */
 .form-container {
   background-color: #ffffff;
   width: 100%;
-  max-width: 400px; /* Impede que fique esticado na tela */
+  max-width: 400px;
   padding: 40px;
-  border-radius: 30px; /* Bordas bem redondas */
-  box-shadow: 0 10px 30px rgba(75, 83, 32, 0.15); /* Sombra suave esverdeada */
+  border-radius: 30px;
+  box-shadow: 0 10px 30px rgba(75, 83, 32, 0.15);
   text-align: center;
 }
 
-/* 3. Logo e Títulos (AJUSTADO PARA FICAR UM EM CIMA DO OUTRO) */
 .login-logo a {
   display: flex;
-  flex-direction: column; /* Coloca Imagem em cima, Texto embaixo */
-  align-items: center; /* Centraliza horizontalmente */
+  flex-direction: column;
+  align-items: center;
   text-decoration: none;
   margin-bottom: 20px;
 }
 
 .login-icon {
-  height: 50px; /* Tamanho do ícone da pata */
+  height: 50px;
   width: auto;
-  margin-bottom: 5px; /* Espacinho entre a pata e o nome */
+  margin-bottom: 5px;
 }
 
 .logo-text {
-  font-family: var(--font-secondary); /* Fonte Anton */
+  font-family: var(--font-secondary);
   font-size: 2rem;
   color: var(--primary-dark);
   letter-spacing: 2px;
@@ -512,10 +496,9 @@ body {
   margin-bottom: 30px;
 }
 
-/* 4. Campos de Texto (Inputs) */
 .form-group {
   margin-bottom: 20px;
-  text-align: left; /* Rótulos alinhados à esquerda */
+  text-align: left;
 }
 
 .form-group label {
@@ -531,7 +514,7 @@ body {
   width: 100%;
   padding: 15px;
   border: 2px solid #e0e0e0;
-  border-radius: 15px; /* Campos arredondados */
+  border-radius: 15px;
   font-family: var(--font-primary);
   font-size: 0.95rem;
   background-color: #fafafa;
@@ -539,19 +522,18 @@ body {
 }
 
 .form-group input:focus {
-  border-color: var(--accent-green); /* Fica verde ao clicar */
+  border-color: var(--accent-green);
   outline: none;
   background-color: #fff;
 }
 
-/* 5. Botão de Entrar */
 .btn-full {
   width: 100%;
   padding: 15px;
   background-color: var(--primary-dark);
   color: var(--white);
   border: none;
-  border-radius: 30px; /* Botão estilo pílula */
+  border-radius: 30px;
   font-weight: 700;
   font-size: 1rem;
   cursor: pointer;
@@ -564,7 +546,6 @@ body {
   transform: translateY(-2px);
 }
 
-/* 6. Links do rodapé do form */
 .login-links {
   margin-top: 25px;
   display: flex;
@@ -584,11 +565,6 @@ body {
   text-decoration: underline;
 }
 
-/* =========================================
-   ESTILOS DE MONETIZAÇÃO (LOJA & DOAÇÃO)
-   ========================================= */
-
-/* Grid de Produtos */
 .shop-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -630,7 +606,7 @@ body {
   max-height: 80%;
   max-width: 80%;
   object-fit: contain;
-  mix-blend-mode: multiply; /* Tenta tirar fundo branco da foto do produto */
+  mix-blend-mode: multiply;
 }
 
 .badge-promo {
@@ -675,7 +651,6 @@ body {
   color: white;
 }
 
-/* Banner de Doação */
 .donation-box {
   background-color: var(--primary-dark);
   color: white;
@@ -720,34 +695,28 @@ body {
   color: #f1f7d5;
 }
 
-/* --- ESTILOS DO QR CODE E ÍCONE DO BANNER --- */
-
-/* 1. Transforma o container da direita em Flex para alinhar os itens */
 .donation-icon {
   display: flex;
-  align-items: center; /* Alinha verticalmente no centro */
-  gap: 25px; /* Espaço entre o QR Code e a Mãozinha */
+  align-items: center;
+  gap: 25px;
 }
 
-/* 2. Estilo do QR Code */
 .qr-pix-img {
-  width: 130px; /* Tamanho do QR Code */
+  width: 130px;
   height: 130px;
-  background-color: #fff; /* Fundo branco para garantir leitura */
-  padding: 10px; /* Borda branca interna */
-  border-radius: 15px; /* Cantos arredondados para combinar com o site */
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* 3. Estilo da Mãozinha (Substitui o estilo inline antigo) */
 .hand-icon-img {
   height: 80px;
   width: auto;
-  filter: brightness(0) invert(1); /* Torna a imagem branca */
-  opacity: 0.5; /* Deixa semi-transparente */
+  filter: brightness(0) invert(1);
+  opacity: 0.5;
 }
 
-/* Ajuste de Responsividade para Doação e QR Code */
 @media (max-width: 768px) {
   .donation-box {
     text-align: center;
@@ -758,11 +727,10 @@ body {
     width: 100%;
   }
   .donation-icon {
-    flex-direction: column; /* Em celulares, coloca um embaixo do outro */
+    flex-direction: column;
     gap: 15px;
   }
   .hand-icon-img {
-    height: 60px; /* Diminui um pouco a mãozinha no celular */
+    height: 60px;
   }
 }
-/* Fim do STYLE.CSS */
