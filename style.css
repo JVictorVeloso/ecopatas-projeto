@@ -419,28 +419,6 @@ body {
   margin-top: 10px;
 }
 
-@media (max-width: 768px) {
-  .hero-section {
-    height: 400px;
-    text-align: center;
-  }
-  .hero-buttons {
-    justify-content: center;
-  }
-  .passos-container,
-  .animais-grid,
-  .form-grid {
-    flex-direction: column;
-    grid-template-columns: 1fr;
-  }
-  .full-width {
-    grid-column: span 1;
-  }
-  .passo-card {
-    width: 100%;
-  }
-}
-
 .body-login {
   background-color: var(--bg-color);
   height: 100vh;
@@ -717,19 +695,128 @@ body {
   opacity: 0.5;
 }
 
+.form-wrapper .form-group label {
+  color: var(--accent-green);
+}
+
+.form-wrapper h3 {
+  color: var(--white);
+  border-bottom-color: rgba(255, 255, 255, 0.2);
+}
+
 @media (max-width: 768px) {
-  .donation-box {
-    text-align: center;
-    justify-content: center;
-  }
-  .pix-area {
-    justify-content: center;
-    width: 100%;
-  }
-  .donation-icon {
+  .main-header .container {
     flex-direction: column;
     gap: 15px;
+    padding-bottom: 10px;
   }
+
+  .logo a {
+    font-size: 1.2rem;
+  }
+
+  .main-nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
+  }
+
+  .main-nav a {
+    font-size: 0.85rem;
+  }
+
+  .btn-login {
+    width: 100%;
+    text-align: center;
+    max-width: 200px;
+  }
+
+  .hero-section {
+    height: auto;
+    min-height: 550px;
+    padding: 60px 20px;
+    text-align: center;
+    background-position: center bottom;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+
+  .section-center {
+    padding: 2rem 0;
+  }
+
+  .capsule-title {
+    font-size: 1.2rem;
+    padding: 6px 20px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .full-width {
+    grid-column: span 1;
+  }
+
+  .animais-grid,
+  .passos-container,
+  .shop-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .passo-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .donation-box {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .donation-icon {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .pix-area {
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .pix-key {
+    font-size: 0.9rem;
+    word-break: break-all;
+  }
+
   .hand-icon-img {
     height: 60px;
   }
